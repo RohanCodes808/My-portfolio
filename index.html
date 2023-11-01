@@ -8,157 +8,214 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <h1>MY <span>PORTFOLIO</span></h1>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
+    <div class="loader"></div>
+            <div id="header">
+                <div class="container">
+                    <nav>
+                        <h1>MY <span>PORTFOLIO</span></h1>
+                        <ul id="sidemenu">
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                        </ul>
+                        <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+                    </nav>
 
-            <div class="header-text">
-                <p>Front-End Developer / UX-UI designer</p>
-                <h1>Hi, I'm <span>Rohan Shakya.</span>  </h1>
-            </div>
-        </div>
-    </div>
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.webp" alt="">
+                    <div class="header-text">
+                        <p>Front-End Developer / UX-UI designer</p>
+                        <h1>Hi, I'm <span>Rohan Shakya.</span>  </h1>
+                        <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i><i class="fa-brands fa-js"></i><i class="fa-brands fa-figma"></i>
+                    </div>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I'm an undergraduate student with a passion for development and designing. I have gained valuable experience through coursework and personal projects. I’m seeking an Internship position in the IT field to gain practical experience while contributing to a dynamic and innovative team.</p>
+            </div>
+            <div id="about">
+                <div class="container container-about">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="images/user.webp" alt="">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About <span class="highlight">Me</span> </h1>
+                            <div class="about-col-details">
+                                    <p>I'm an undergraduate student with a passion for development & designing. I have gained valuable experience through coursework and personal projects.</p>
+                                    
+                                    <div class="tab-titles">
+                                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                                    </div>
+
+                                    <div class="tab-contents active-tab" id="skills">
+                                        <ul>
+                                            <li><span>UI/UX</span><br>Designing Webapplication</li>
+                                            <li><span>Web Development</span><br>Web Application</li>
+                                            <li><span>Graphic Designing</span><br>Graphical Images</li>
+                                            
+                                        </ul>
+                                    </div>
+
+                                    <div class="tab-contents" id="experience">
+                                        <ul>
+                                            <li><span>Freelancing</span><br>Designed a website for JCI</li>
+                                            <li><span>Graphic Designing</span><br>Successfully marketed and distributed my designs through the Redbubble platform</li>
+                                            
+                                        </ul>
+                                    </div>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2017</span><br>Completed my school from Omega Int'll.</li>
+                                    <li><span>2018-2020</span><br>Completed my intermediate level studies from United Academy.</li>
+                                    <li><span>2020-Ongoing</span><br>Currently, Studying CSIT in Sagarmatha College of IT</li>
+                                    
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ---------------------------------------------------SERVIVES -->
+            <div id="services">
+                <div class="container">
+                    <h1 class="sub-title subtitle-services">My <span class="highlight"> Services</span></h1>
+                    <div class="services-list">
+                        <div>
+                            <h1>UX-UI Designing</h1>
+                            <p>I specialize in designing user interfaces that are not only visually appealing but also highly functional and intuitive. </p>
+                        </div>
+                        <div>
+                            <h1>Graphic Designing</h1>
+                            <p>My service as a graphic designer revolves around bringing creativity, visual storytelling, and effective communication to the forefront of design.</p>
+                        </div>  
+                        <div>
+                            <h1>Web Designing</h1>
+                            <p>My service as a web designer revolves around creating visually user-friendly websites that cater to the specific objectives of my clients.</p>
+                        </div>
+                        <div>
+                            <h1>UX-UI Designing</h1>
+                            <p>I specialize in designing user interfaces that are not only visually appealing but also highly functional and intuitive. </p>
+                        </div>
+                        <div>
+                            <h1>Graphic Designing</h1>
+                            <p>My service as a graphic designer revolves around bringing creativity, visual storytelling, and effective communication to the forefront of design.</p>
+                        </div>  
+                        <div>
+                            <h1>Web Designing</h1>
+                            <p>My service as a web designer revolves around creating visually user-friendly websites that cater to the specific objectives of my clients.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact">
+                <div class="container contact-container">
+                    <h1 class="sub-title subtitle-contact">CONTACT <span class="highlight"> ME</span></h1>
+                    <div class="row contact-row">
+                        <!-- <div class="contact-left">
+                            <div class="all">
+                                    <div class="contacts-social">
+                                        <p><i class="fa fa-envelope" aria-hidden="true"></i>rjn9841@gmail.com</p>
+                                        <p><i class="fa fa-phone-square" aria-hidden="true"></i>9861929910</p>
+                                    </div>
+                                    <div class="contact-cv">
+                                        <a href="images/RohanShakya_Resume.pdf" download class="btn">DOWNLOAD CV</a>
+                                    </div>
+                            </div>
+                        </div> -->
+                        <div class="contact-content">
+                            <div class="contacts-social">
+                                <h1>Feel free to reach out to me if you have any questions, collaboration opportunities, or just want to say hello.</h1>
+                                <p><i class="fa fa-envelope" aria-hidden="true"></i>rjn9841@gmail.com</p>
+                                <p><i class="fa fa-phone-square" aria-hidden="true"></i>9861929910</p>
+                                <a href="images/RohanShakya_Resume.pdf" download class="btn cv-btn">DOWNLOAD CV</a>
+                            </div>
+                            <!-- <div class="contact-cv">
+                                
+                            </div> -->
+                        </div>
+                        <div class="contact-content2">
+                            <div class="contact-right">
+                                <h1>Leave a message here !</h1>
+                                <form name="submit-to-google-sheet">
+                                    <input type="text" name="Name" placeholder="Your Name" required><br>
+                                    <input type="email" name="Email" placeholder="Your Email" required><br>
+                                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea><br>
+                                    <button type="submit" class="btn submit-btn">SUBMIT</button>
+                                </form>
+                                
+                            </div>
+                            <div class="social-links">
+                                <a href="https://www.instagram.com/rohan_designs_/"> <i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/itsrohansakya"> <i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/in/rohan-shakya-6b2063230/"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://www.behance.net/rohanshakya1"> <i class="fa-brands fa-square-behance"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+
+            <script>
+                                    window.addEventListener("load", () => {
+                    const loader = document.querySelector(".loader");
+
+                    loader.classList.add("loader--hidden");
+
+                    loader.addEventListener("transitionend", () => {
+                        document.body.removeChild(loader);
+                    });
+                    });
+
+            </script>
+
+            <script>
+
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+                
+                function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                }
+            </script>
+
+            <script>
+                var sidemeu = document.getElementById("sidemenu");
+                function openmenu(){
+                    sidemeu.style.right = "0";
+                }
+                function closemenu(){
+                    sidemeu.style.right = "-200px";
+                }
+            </script>
+                <form name="submit-to-google-sheet">
+                
                     
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-
-                    </div>
-
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Webapplication</li>
-                            <li><span>Web Development</span><br>Web Application</li>
-                            <li><span>Graphic Designing</span><br>Graphical Images</li>
-                            
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Freelancing</span><br>Designed a website for JCi</li>
-                            <li><span>Graphic Designing</span><br>Graphical Images</li>
-                            
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2017</span><br>Completed my school from Omega Int'll.</li>
-                            <li><span>2018-2020</span><br>Completed my intermediate level studies from United Academy.</li>
-                            <li><span>2020-Ongoing</span><br>Currently, Studying CSIT in Sagarmatha College of IT</li>
-                            
-                        </ul>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- ---------------------------------------------------SERVIVES -->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <h1>UX-UI Designing</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, eos excepturi. Minus libero iure veniam perferendis dignissimos provident reprehenderit ut.</p>
-                </div>
-                <div>
-                    <h1>Graphic Designing</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, eos excepturi. Minus libero iure veniam perferendis dignissimos provident reprehenderit ut.</p>
-                </div>  
-                <div>
-                    <h1>Web Designing</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, eos excepturi. Minus libero iure veniam perferendis dignissimos provident reprehenderit ut.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">CONTACT ME</h1>
-                    <p><i class="fa fa-envelope" aria-hidden="true"></i>rjn9841@gmail.com</p>
-                    <p><i class="fa fa-phone-square" aria-hidden="true"></i>9861929910</p>
-                    <a href="images/RohanShakya_Resume.pdf" download class="btn">DOWNLOAD CV</a>
-                </div>
-                <div class="contact-right">
-                    <form action="" name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required><br>
-                        <input type="email" name="Email" placeholder="Your Email" required><br>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea><br>
-                        <button type="submit" class="btn submit-btn">SUBMIT</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script>
-
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-
-    <script>
-        var sidemeu = document.getElementById("sidemenu");
-        function openmenu(){
-            sidemeu.style.right = "0";
-        }
-        function closemenu(){
-            sidemeu.style.right = "-200px";
-        }
-    </script>
-        <form name="submit-to-google-sheet">
-           
-            
-        </form>
-        
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbyFk4ZZ_UNTSO4L7AU5USQb4aeykI2MAa2wOpWwp2bVs0A9vWD6xy24-ucEWrEIPc8/exec'
-            const form = document.forms['submit-to-google-sheet']
-        
-            form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => console.log('Success!', response))
-                .catch(error => console.error('Error!', error.message))
-            })
-  </script>
+                </form>
+                
+                <script>
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbyFk4ZZ_UNTSO4L7AU5USQb4aeykI2MAa2wOpWwp2bVs0A9vWD6xy24-ucEWrEIPc8/exec'
+                    const form = document.forms['submit-to-google-sheet']
+                
+                    form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                        .then(response => console.log('Success!', response))
+                        .catch(error => console.error('Error!', error.message))
+                    })
+        </script>
 </body>
 </html>
