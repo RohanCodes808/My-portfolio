@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <div class="loader"></div>
@@ -30,11 +30,14 @@
                     </div>
                 </div>
             </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+              </div>
             <div id="about">
                 <div class="container container-about">
                     <div class="row">
                         <div class="about-col-1">
-                            <img src="images/user.webp" alt="">
+                            <img src="assets/images/user.webp" alt="">
                         </div>
                         <div class="about-col-2">
                             <h1 class="sub-title">About <span class="highlight">Me</span> </h1>
@@ -133,7 +136,7 @@
                                 <h1>Feel free to reach out to me if you have any questions, collaboration opportunities, or just want to say hello.</h1>
                                 <p><i class="fa fa-envelope" aria-hidden="true"></i>rjn9841@gmail.com</p>
                                 <p><i class="fa fa-phone-square" aria-hidden="true"></i>9861929910</p>
-                                <a href="images/RohanShakya_Resume.pdf" download class="btn cv-btn">DOWNLOAD CV</a>
+                                <a href="assets/images/RohanShakya_Resume.pdf" download class="btn cv-btn">DOWNLOAD CV</a>
                             </div>
                             <!-- <div class="contact-cv">
                                 
@@ -155,20 +158,33 @@
                                 <a href="https://www.facebook.com/itsrohansakya"> <i class="fa-brands fa-facebook"></i></a>
                                 <a href="https://www.linkedin.com/in/rohan-shakya-6b2063230/"><i class="fa-brands fa-linkedin"></i></a>
                                 <a href="https://www.behance.net/rohanshakya1"> <i class="fa-brands fa-square-behance"></i></a>
+                                <br>
+                                <a href="#header" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></a>
+
                             </div>
                         </div>
                     </div>
                 </div>
-             
+                
+                <div >
+                </div>
             </div>
 
             <script>
-                                    window.addEventListener("load", () => {
-                    const loader = document.querySelector(".loader");
+                window.onscroll = function() {myFunction()};
+                function myFunction() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = (winScroll / height) * 100;
+                document.getElementById("myBar").style.width = scrolled + "%";
+                }
 
-                    loader.classList.add("loader--hidden");
 
-                    loader.addEventListener("transitionend", () => {
+
+                window.addEventListener("load", () => {
+                const loader = document.querySelector(".loader");
+                loader.classList.add("loader--hidden");
+                loader.addEventListener("transitionend", () => {
                         document.body.removeChild(loader);
                     });
                     });
