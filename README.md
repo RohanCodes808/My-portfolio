@@ -15,8 +15,8 @@ This website is built to develop my technical and webdesigning skills. I learned
 6. Figma
 
 ## Webpage Visuals
-<img src="/images/1.png">
-<img src="/images/2.png">
-<img src="/images/3.png">
-<img src="/images/4.png">
+<img src="assets/images/1.png">
+<img src="assets/images/2.png">
+<img src="assets/images/3.png">
+<img src="assets/images/4.png">
 
