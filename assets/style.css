@@ -449,7 +449,7 @@ p .fa {
 
 .scroll-top {
     position: absolute;
-    margin-top: 35px;
+    margin-top: 45px;
     margin-left: 25px;
 
 }
@@ -522,7 +522,7 @@ p .fa {
 
 .social-links{
     margin-top: -143px;
-    margin-left: -725px;
+    margin-left: -837px;
 }
 
 .social-links i{
@@ -533,13 +533,41 @@ p .fa {
 }
 
 .social-links i:hover{
-    color: var(--green-color);
+    /* color: var(--green-color); */
 }
 
 .social-links a{
     text-decoration: none;
     color: white;
 }
+
+.contact-content2{
+    z-index: 0;
+}
+
+.design{
+    height: 350px;
+    width: 400px;
+    background-color: var(--green-color);
+    position: absolute;
+    z-index: -1;
+    top: 25%;
+    left: -500px;
+    filter: blur(125px);
+}
+
+.design2{
+    height: 300px;
+    width: 350px;
+    background-color: var(--green-color);
+    position: absolute;
+    z-index: -1;
+    top: 28%;
+    right: 175px;
+    filter: blur(125px);
+}
+
+
 
   
   /* .contact-right{
@@ -593,6 +621,10 @@ p .fa {
 
  
 @media only screen and (max-width: 1145px) {
+
+    .scroll-top{
+        display: none;
+    }
     .header-text i{
         font-size: 1.8rem;
     }
@@ -1051,4 +1083,3 @@ p .fa {
     
    
 }
-
