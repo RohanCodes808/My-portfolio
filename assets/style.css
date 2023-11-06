@@ -831,6 +831,28 @@ p .fa {
     .social-links i{
         font-size: 1.1rem;
     }
+
+    .design{
+        height: 350px;
+        width: 400px;
+        background-color: var(--green-color);
+        position: absolute;
+        z-index: -1;
+        top: 25%;
+        left: -500px;
+        filter: blur(125px);
+    }
+    
+    .design2{
+        height: 250px;
+        width: 350px;
+        background-color: var(--green-color);
+        position: absolute;
+        z-index: -1;
+        top: 33%;
+        right: 124px;
+        filter: blur(125px);
+    }
  
 
 }

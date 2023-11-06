@@ -7,12 +7,12 @@ This is a Portfolio website built using HTML, CSS and JS.
 
 This website is built to develop my technical and webdesigning skills. I learned how to build a responsive webpage after completing this project.
 ## Technologies Used
-1. HTML5
-2. CSS3
-3. JS(ES6)
-4. Git
-5. GitHub
-6. Figma
+1. (HTML5)[https://www.w3schools.com/html/]
+2. (CSS3)[https://www.w3schools.com/css/default.asp]
+3. (JS(ES6))[https://www.w3schools.com/js/default.asp]
+4. (Git)[https://www.w3schools.com/git/default.asp]
+5. (GitHub)[https://github.com/]
+6. (Figma)[https://figma.com/]
 
 ## Webpage Visuals
 <img src="assets/images/1.png">
