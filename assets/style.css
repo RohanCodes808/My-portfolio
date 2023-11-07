@@ -532,9 +532,7 @@ p .fa {
     
 }
 
-.social-links i:hover{
-    /* color: var(--green-color); */
-}
+
 
 .social-links a{
     text-decoration: none;
@@ -565,6 +563,17 @@ p .fa {
     top: 28%;
     right: 179px;
     filter: blur(125px);
+}
+
+.design3{
+    height: 300px;
+    width: 350px;
+    background-color: var(--green-color);
+    position: absolute;
+    z-index: -1;
+    top: 1650px;
+    right: 40%;
+    filter: blur(175px);
 }
 
 
@@ -639,9 +648,7 @@ p .fa {
     #contact{
         height: 100vh;
     }
-    .contact-content{
-        /* display: none; */
-    }
+    
     
     .services-list{
      
