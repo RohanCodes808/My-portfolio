@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+    <a href="#header"  id="myBtn"><i class="fa-solid fa-arrow-up"></i></a>
     <div class="loader"></div>
+   
+
             <div id="header">
                 <div class="container">
                     <nav>
@@ -169,9 +172,6 @@
                                 <a href="https://www.facebook.com/itsrohansakya"> <i class="fa-brands fa-facebook"></i></a>
                                 <a href="https://www.linkedin.com/in/rohan-shakya-6b2063230/"><i class="fa-brands fa-linkedin"></i></a>
                                 <a href="https://www.behance.net/rohanshakya1"> <i class="fa-brands fa-square-behance"></i></a>
-                                <br>
-                                <a href="#header" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></a>
-
                             </div>
                             
                             
@@ -186,12 +186,28 @@
             </div>
 
             <script>
+                /////////////////////////////////////////////////////-------------SCROLL TOP-------------////////////////////////////////////////////////////////
+                let mybutton = document.getElementById("myBtn");
+                window.addEventListener("scroll",()=>{
+                    if(window.pageYOffset > 100){
+                        mybutton.style.display = "block";
+                    }
+                    else{
+                        mybutton.style.display = "none";
+                    }
+                })
+                /////////////////////////////////////////////////////-------------SCROLL TOP-------------////////////////////////////////////////////////////////
+                </script>
+                <script>
+                /////////////////////////////////////////////////////-------------Scroll Indicator-------------////////////////////////////////////////////////////////
+
                 window.onscroll = function() {myFunction()};
                 function myFunction() {
                 var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
                 var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
                 var scrolled = (winScroll / height) * 100;
                 document.getElementById("myBar").style.width = scrolled + "%";
+               
                 }
 
 
@@ -200,10 +216,10 @@
                 const loader = document.querySelector(".loader");
                 loader.classList.add("loader--hidden");
                 loader.addEventListener("transitionend", () => {
-                        document.body.removeChild(loader);
                     });
                     });
-    
+                /////////////////////////////////////////////////////-------------Scroll Indicator-------------////////////////////////////////////////////////////////
+                
             </script>
 
             <script>
