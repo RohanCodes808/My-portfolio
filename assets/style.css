@@ -13,6 +13,29 @@ html{
 
 }
 
+/*  */
+
+.typewriter h1 {
+    color: #fff;
+    overflow: hidden; 
+    border-right: .15em solid var(--green-color); 
+    white-space: nowrap; 
+    margin-right: 350px;
+    animation: 
+      typing 2.5s steps(30, end),
+      blink-caret .5s  infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 75% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--green-color) }
+  }
+
 body{
     background: black;
     color: white;
@@ -502,7 +525,7 @@ p .fa {
     align-items: center;
     justify-content: center;
     background: #000000;
-    transition: opacity 1s, visibility 1s;
+    transition: opacity 0.2s, visibility 0.2s;
   }
   
   .loader--hidden {
@@ -514,10 +537,10 @@ p .fa {
     content: "";
     width: 75px;
     height: 75px;
-    border: 15px solid #ffffff;
+    border: 15px solid #000000;
     border-top-color: var(--green-color);
     border-radius: 50%;
-    animation: loading 1s ease infinite;
+    animation: loading 0.2s ease infinite;
   }
 
   #contact{
