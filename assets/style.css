@@ -12,8 +12,12 @@ html{
     --second-green-color:rgb(6, 195, 25);
 
 }
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
 
-/*  */
+
 
 .typewriter h1 {
     color: #fff;
@@ -137,10 +141,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
-.header-text{
-    margin-top: 20%;
-    font-size: 30px;
-}
+
 
 .header-text p{
     font-size: 25px;
@@ -627,6 +628,8 @@ p .fa {
     right: 42%;
     filter: blur(175px);
 }
+
+
   
   @keyframes loading {
     from {
